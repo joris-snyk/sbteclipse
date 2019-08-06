@@ -45,5 +45,5 @@ jobs:
 
       # run snyk test
       - snyk/scan:
-          target-file: src/sbt-test/sbteclipse/01-structure/build.sbt
+          target-file: build.sbt
           token-variable: SNYK_TOKEN
