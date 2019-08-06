@@ -2,7 +2,9 @@
 #
 # Check https://circleci.com/docs/2.0/sample-config/ for more details
 #
-version: 2
+version: 2.1
+orbs:
+  snyk: snyk/snyk@0.0.7
 jobs:
   build:
     docker:
@@ -40,3 +42,6 @@ jobs:
 
       # run tests!
       - run: cat /dev/null | sbt test:test
+
+      # run snyk test
+      - snyk/scan
