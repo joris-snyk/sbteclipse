@@ -22,7 +22,7 @@ lazy val root = (project in file("."))
         "org.scala-lang.modules" %% "scala-xml"     % "1.1.1",
         "org.scalaz"             %% "scalaz-core"   % "7.2.14",
         "org.scalaz"             %% "scalaz-effect" % "7.2.14",
-        "ch.qos.logback"         %% "logback-classic" % "1.0.1",
+        "ch.qos.logback"         % "logback-classic" % "1.0.1",
         "org.scalatest"          %% "scalatest"     % "3.0.1" % "test"
       ),
       publishMavenStyle := false,
