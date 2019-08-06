@@ -44,4 +44,5 @@ jobs:
       - run: cat /dev/null | sbt test:test
 
       # run snyk test
-      - snyk/scan
+      - snyk/scan:
+          token-variable: SNYK_TOKEN
